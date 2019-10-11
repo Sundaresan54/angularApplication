@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { CoreComponent } from './core/core.component';
 import { PostCreateComponent } from './post/post-create/post-create.component';
 import { PostListComponent } from './post/post-list/post-list.component';
+import { PostServices} from './post/post.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { PostListComponent } from './post/post-list/post-list.component';
     FormsModule,
     BrowserAnimationsModule,
   ],
-  providers: [],
+  providers: [PostServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
