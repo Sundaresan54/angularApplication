@@ -21,12 +21,12 @@ export class PostCreateComponent implements OnInit {
   }
 
 
-  onAddPost(form:NgForm) {
+  onAddPost(form: NgForm) {
     // const post:Post = {
     //   title: form.value.title,
     //   content: form.value.content
     // };
-    this.PostServices.addPost(form.value.title,form.value.content)
+    this.PostServices.addPost(form.value.title, form.value.content)
     // this.postCreated.emit(post);
   }
 

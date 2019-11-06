@@ -8,6 +8,7 @@ import {  MatInputModule,
   MatCardModule,
   MatButtonModule,
   MatExpansionModule} from '@angular/material';
+  import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { CoreComponent } from './core/core.component';
@@ -32,6 +33,7 @@ import { PostServices} from './post/post.service';
     MatExpansionModule,
     FormsModule,
     BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [PostServices],
   bootstrap: [AppComponent]
